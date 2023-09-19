@@ -3,5 +3,5 @@ interface SectionLayoutProps {
   ref?: React.RefObject<HTMLDivElement>;
 }
 export default function SectionLayout({ children, ref }: SectionLayoutProps) {
-  return <div style={{ padding: "5rem 10rem" }}>{children}</div>;
+  return <section style={{ padding: "5rem 10rem" }}>{children}</section>;
 }
