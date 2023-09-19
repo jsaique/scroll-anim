@@ -18,11 +18,17 @@ const abril = Abril_Fatface({
 export default function Header() {
   // Mouse movement
   const hero = useRef<HTMLDivElement>(null);
-  // Animation
+  // Hover animation
   const hoverHero = hover3d(hero, {
     x: 30,
     y: -40,
     z: 30,
+  });
+
+  const imageHover = hover3d(hero, {
+    x: 20,
+    y: -5,
+    z: 11,
   });
 
   return (
@@ -71,6 +77,7 @@ export default function Header() {
               width={600}
               height={600}
               alt="hero"
+              style={{ transform: imageHover.transform }}
             />
           </div>
         </div>
@@ -149,7 +156,7 @@ const HeaderStyled = styled.header`
       }
     }
 
-    .image-content {
+    .image-content .image {
       padding: 1rem;
       border-radius: 8px;
       background-color: var(--color-bg);
