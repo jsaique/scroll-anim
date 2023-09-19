@@ -1,7 +1,7 @@
 "use client";
 
 import Button from "../button/Button";
-import { FaRocket, FaWallet } from "react-icons/fa";
+import { FaWallet } from "react-icons/fa";
 
 export default function Navitems() {
   return (
